@@ -31,7 +31,9 @@ const Operation = ({ addTransaction, addDescription, addAmount, description, amo
             РАСХОД
           </button>
           <button
-            onClick = {() => addTransaction(true)} type='button' className='operation__btn operation__btn-add'>
+            onClick = {() => addTransaction(true)} 
+            type='button' 
+            className='operation__btn operation__btn-add'>
             ДОХОД
           </button>
         </div>
