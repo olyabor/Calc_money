@@ -1,6 +1,6 @@
 import React from 'react';
 
-const HistoryItem = ({ transaction }) => {
+const HistoryItem = ({ transaction, delTransaction }) => {
   return (
     <li
       className={`history__item history__item-${
@@ -9,15 +9,12 @@ const HistoryItem = ({ transaction }) => {
     >
       {transaction.description}
       <span className='history__money'>{transaction.amount} ₽</span>
-      <button className='history__delete'>x</button>
+      <button 
+      className='history__delete' 
+      onClick={() => delTransaction(transaction.id)}
+      >x</button>
     </li>
   );
 }
 
 export default HistoryItem;
-
-// <li class='history__item  history__item-minus'>
-//   Отдал долг
-//   <span class='history__money'>-10000 ₽</span>
-//   <button class='history__delete'>x</button>
-// </li>;
