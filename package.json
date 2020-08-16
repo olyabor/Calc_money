@@ -10,7 +10,7 @@
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.3"
   },
-  "homepage": "https://github.com/olyabor/Calc_money/",
+  "homepage": "https://olyabor.github.io/Calc_money/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
